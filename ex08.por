@@ -5,12 +5,12 @@ programa {
     leia(idade)
 
     se (idade < 3) {
-      escreva("Bebê")
+      escreva("BebÃª")
     } senao se (idade >= 3 e idade < 12) {
-      escreva("Criança")
+      escreva("CrianÃ§a")
     } senao se (idade >= 12 e idade < 18) {
       escreva("Adolescente")
-    } senao se (idade >= 18 e idade > 60) {
+    } senao se (idade >= 18 e idade < 60) {
       escreva("Adulto")
     } senao se (idade >= 60) {
       escreva("Idoso")
