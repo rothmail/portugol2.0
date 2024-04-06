@@ -1,13 +1,13 @@
 programa {
   funcao inicio() {
     inteiro num
-    escreva("Digite um número: ")
+    escreva("Digite um nÃºmero: ")
     leia(num)
 
     se (num % 2 == 0) {
       escreva("Par")
     } senao {
-      escreva("Ímpar")
+      escreva("Ãmpar")
     }
   }
 }
