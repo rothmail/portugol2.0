@@ -5,7 +5,7 @@ programa {
     inteiro contadorDentro = 0
     inteiro contadorFora = 0
 
-    enquanto (contador < 11){
+    enquanto (contador < 11) {
       escreva("Digite um número:\n")
       leia(num)
       se (num >= 10 e num <= 20) {
