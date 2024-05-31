@@ -10,15 +10,15 @@ programa {
     real num2
 
     faca {
-      escreva("Escolha uma operação: (+, - , * , / | digite 'sair' para PARAR) ")
+      escreva("Escolha uma operaÃ§Ã£o: (+, - , * , / | digite 'sair' para PARAR) ")
       leia(operacao)
 
-      escreva("\nUm número: ")
+      escreva("\nUm nÃºmero: ")
       leia(num1)
 
-      escreva("\nOutro número: ")
+      escreva("\nOutro nÃºmero: ")
       leia(num2)
-
+      se (operacao != "sair) {
       se (operacao == "+") {
         escreva(num1+num2, "\n")
       } senao se (operacao == "-") {
@@ -28,7 +28,8 @@ programa {
       }  senao se (operacao == "/") {
         escreva(num1/num2, "\n")
       } senao {
-        escreva("Operação não encontrada\n")
+        escreva("OperaÃ§Ã£o nÃ£o encontrada\n")
+      }
       }
       escreva(contadorTotal++)
       contadorTotal++
@@ -37,10 +38,10 @@ programa {
       contadorMu++
       contadorDi++
     } enquanto (operacao != "sair")
-    escreva("Realizações do programa: ", contadorTotal++)
-    escreva("Adição: ", contadorAd)
-    escreva("Subtração: ", contadorSu)
-    escreva("Multiplicação: ", contadorMu)
-    escreva("Divisão: ", contadorDi)
+    escreva("RealizaÃ§Ãµes do programa: ", contadorTotal++)
+    escreva("AdiÃ§Ã£o: ", contadorAd)
+    escreva("SubtraÃ§Ã£o: ", contadorSu)
+    escreva("MultiplicaÃ§Ã£o: ", contadorMu)
+    escreva("DivisÃ£o: ", contadorDi)
   }
 }
