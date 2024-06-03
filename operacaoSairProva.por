@@ -13,23 +13,24 @@ programa {
       escreva("Escolha uma operação: (+, - , * , / | digite 'sair' para PARAR) ")
       leia(operacao)
 
-      escreva("\nUm número: ")
-      leia(num1)
+      se (operacao != "sair") {
+        escreva("\nUm número: ")
+        leia(num1)
 
-      escreva("\nOutro número: ")
-      leia(num2)
-      se (operacao != "sair) {
-      se (operacao == "+") {
-        escreva(num1+num2, "\n")
-      } senao se (operacao == "-") {
-        escreva(num1-num2, "\n")
-      } senao se (operacao == "*") {
-        escreva(num1*num2, "\n")
-      }  senao se (operacao == "/") {
-        escreva(num1/num2, "\n")
-      } senao {
-        escreva("Operação não encontrada\n")
-      }
+        escreva("\nOutro número: ")
+        leia(num2)
+
+        se (operacao == "+") {
+          escreva(num1+num2, "\n")
+        } senao se (operacao == "-") {
+          escreva(num1-num2, "\n")
+        } senao se (operacao == "*") {
+          escreva(num1*num2, "\n")
+        }  senao se (operacao == "/") {
+          escreva(num1/num2, "\n")
+        } senao {
+          escreva("Operação não encontrada\n")
+        }
       }
       escreva(contadorTotal++)
       contadorTotal++
@@ -38,10 +39,10 @@ programa {
       contadorMu++
       contadorDi++
     } enquanto (operacao != "sair")
-    escreva("Realizações do programa: ", contadorTotal++)
-    escreva("Adição: ", contadorAd)
-    escreva("Subtração: ", contadorSu)
-    escreva("Multiplicação: ", contadorMu)
-    escreva("Divisão: ", contadorDi)
+    escreva("\nRealizações do programa: ", contadorTotal++)
+    escreva("\nAdição: ", contadorAd)
+    escreva("\nSubtração: ", contadorSu)
+    escreva("\nMultiplicação: ", contadorMu)
+    escreva("\nDivisão: ", contadorDi)
   }
 }
