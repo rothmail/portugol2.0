@@ -1,0 +1,58 @@
+programa {
+  funcao inicio() {
+    escreva("1. Hamburguer - R$ 14,00\n2. Refrigerante - R$ 7,00\n3. Torrada - R$ 9,00\n4. Pastel - R$ 8,00\n5. Sair")
+
+
+    inteiro precoH = 14
+    inteiro precoR = 7
+    inteiro precoP = 8
+    inteiro precoT = 9
+
+    inteiro contadorH = contadorH * precoH
+    inteiro contadorR = contadorR * precoR
+    inteiro contadorT = contadorT * precoT
+    inteiro contadorP = contadorP * precoP
+
+    inteiro pedido
+    inteiro qntdPedido
+
+    faca {
+      escreva("\nInforme o número do pedido: (1|2|3|4|5)")
+      leia(pedido)
+
+      
+      se (pedido != 5) {
+      escreva("\nInforme a quantidade: ")
+      leia(qntdPedido)
+
+      se (qntdPedido > 0) {
+      escolha (pedido) {
+      caso 1:
+        escreva("\nNúmero informado: ", pedido,"\nQuantidade: ", qntdPedido, "\nValor final: ", precoH*qntdPedido)
+        contadorH++
+      pare
+      caso 2:
+        escreva("\nNúmero informado: ", pedido,"\nQuantidade: ", qntdPedido, "\nValor final: ", precoR*qntdPedido)
+        contadorR++
+      pare
+      caso 3:
+        escreva("\nNúmero informado: ", pedido,"\nQuantidade: ", qntdPedido, "\nValor final: ", precoT*qntdPedido)
+        contadorT++
+      pare
+      caso 4:
+        escreva("\nNúmero informado: ", pedido,"\nQuantidade: ", qntdPedido, "\nValor final: ", precoP*qntdPedido)
+        contadorP++
+      pare
+      caso 5:
+        escreva("\nEncerrando programa...")
+      pare
+      caso contrario:
+        escreva("\nNão foi possível concluir o pedido.")
+      pare
+    }
+    }
+    escreva("\nValor Total: ", contadorH + contadorR + contadorT + contadorP)
+    }
+    } enquanto (pedido !=5)
+  }
+}
