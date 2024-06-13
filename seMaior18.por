@@ -6,7 +6,7 @@ programa {
     se (idade >= 18 e idade <= 50) {
       escreva("Pode")
     } senao {
-      escreva("Não pode")
+      escreva("NÃ£o pode")
     }
   }
 }
