@@ -5,13 +5,13 @@ programa {
     leia(voto)
 
     se (voto == 31) {
-      escreva("Você votou em: Polvo \n")
+      escreva("VocÃª votou em: Polvo \n")
     } senao se (voto == 71) {
-      escreva("Você votou em: Birolino")
+      escreva("VocÃª votou em: Birolino")
     } senao se (voto == 21) {
-      escreva("Você votou em: Kiro Lomes")
+      escreva("VocÃª votou em: Kiro Lomes")
     } senao {
-      escreva("Não identificamos o candidato")
+      escreva("NÃ£o identificamos o candidato")
     }
   }
 }
