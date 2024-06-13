@@ -8,10 +8,15 @@ programa {
     inteiro precoP = 8
     inteiro precoT = 9
 
-    inteiro contadorH = contadorH * precoH
-    inteiro contadorR = contadorR * precoR
-    inteiro contadorT = contadorT * precoT
-    inteiro contadorP = contadorP * precoP
+    inteiro contadorH = 0
+    inteiro contadorR = 0
+    inteiro contadorT = 0
+    inteiro contadorP = 0
+
+    inteiro finalH = contadorH * precoH
+    inteiro finalR = contadorR * precoR
+    inteiro finalT = contadorT * precoT
+    inteiro finalP = contadorP * precoP
 
     inteiro pedido
     inteiro qntdPedido
